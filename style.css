@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  font-family: Plus Jakarta Sans;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-family: Plus Jakarta Sans;
+  font-size: 50px;
+  color: #2c363f;
+  letter-spacing: 10%;
+  line-height: 100px;
+  font-weight: 200;
+  color: black;
+  margin-left: 460px;
+}
+.logo span {
+  color: #022b06;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.nav-links a {
+  color: #2c363f;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #023507;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.nav-links a:hover {
+  transform: scale(1.2);
+}
+
+.paintings {
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row-1 img {
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.row-2 img {
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.row-3 img {
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.about-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.my-pic img {
+  border-radius: 50%;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.about h1 {
+  font-size: 40px;
+  color: #022b06;
+  font-weight: 700;
+  margin-left: 50px;
+  padding-bottom: 15px;
+}
+.about h3 {
+  font-size: 20px;
+  color: #475748;
+  margin-left: 50px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.about p {
+  color: #191a19;
+  margin-left: 50px;
+  width: 750px;
+}
+
+footer {
+  height: 40vh;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.contact-page h3 {
+  font-size: 30px;
+  color: #022b06;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: #475748;
+  cursor: pointer;
+}
+.contact p {
+  color: #191a19;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+.contact span {
+  color: #475748;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #475748;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .paintings {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .paintings img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-page {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .about h1,
+  .about h3,
+  .about p {
+    margin-left: 0;
+  }
+
+  .about p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
